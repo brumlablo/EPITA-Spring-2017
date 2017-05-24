@@ -16,6 +16,7 @@
 		3C30FDBF1EB2825700225C75 /* WeatherFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30FDBE1EB2825700225C75 /* WeatherFetch.swift */; };
 		AC85334B1ECCB5E9008C354E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85334A1ECCB5E9008C354E /* Weather.swift */; };
 		AC85334F1ECCC3E8008C354E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC85334E1ECCC3E8008C354E /* TableViewController.swift */; };
+		AC8546711ED5EF4400D7DAAC /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8546701ED5EF4400D7DAAC /* WeatherTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		3C30FDBE1EB2825700225C75 /* WeatherFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherFetch.swift; sourceTree = "<group>"; };
 		AC85334A1ECCB5E9008C354E /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		AC85334E1ECCC3E8008C354E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AC8546701ED5EF4400D7DAAC /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherTableViewCell.swift; path = ../WeatherTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		3C0B8CC01EA7FD9700F93394 /* Advanced iOS Spring 2017 */ = {
 			isa = PBXGroup;
 			children = (
+				AC8546701ED5EF4400D7DAAC /* WeatherTableViewCell.swift */,
 				3C0B8CC11EA7FD9700F93394 /* AppDelegate.swift */,
 				3C0B8CC31EA7FD9700F93394 /* ViewController.swift */,
 				3C30FDBE1EB2825700225C75 /* WeatherFetch.swift */,
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8546711ED5EF4400D7DAAC /* WeatherTableViewCell.swift in Sources */,
 				AC85334B1ECCB5E9008C354E /* Weather.swift in Sources */,
 				3C0B8CC41EA7FD9700F93394 /* ViewController.swift in Sources */,
 				3C0B8CC21EA7FD9700F93394 /* AppDelegate.swift in Sources */,
