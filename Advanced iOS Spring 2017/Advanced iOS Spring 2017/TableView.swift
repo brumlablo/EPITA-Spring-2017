@@ -29,11 +29,11 @@ class TableView: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
       
-      weatherArray.append(Weather(city: "Berlin", temperature: 33, picture: UIImage(named:"Berlin"))!)
-      weatherArray.append(Weather(city: "Paris", temperature: 666, picture: UIImage(named:"Paris"))!)
-      weatherArray.append(Weather(city: "Tokyo", temperature: 20, picture: nil)!)
-      weatherArray.append(Weather(city: "Prague", temperature: 27, picture: nil)!)
-      weatherArray.append(Weather(city: "Oruro", temperature: 11, picture: nil)!)
+      weatherArray.append(Weather(city: "La Paz", temperature: 26, picture: UIImage(named:"lapaz"))!)
+      weatherArray.append(Weather(city: "Paris", temperature: 10, picture: UIImage(named:"paris"))!)
+      weatherArray.append(Weather(city: "Osaka", temperature: -5, picture: UIImage(named:"osaka"))!)
+      weatherArray.append(Weather(city: "Lima", temperature: -20, picture: UIImage(named:"lima"))!)
+      weatherArray.append(Weather(city: "Ljubljana", temperature: 11, picture: UIImage(named:"ljubljana"))!)
     }
 
     override func didReceiveMemoryWarning() {

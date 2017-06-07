@@ -15,6 +15,7 @@ class Weather{
   var picture : UIImage?
   
   init?(city:String, temperature: Int, picture : UIImage?){
+    
     self.city = city
     self.temperature = temperature
     self.picture = picture

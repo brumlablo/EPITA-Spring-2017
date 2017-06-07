@@ -30,17 +30,24 @@ class AddCityController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-      var random = arc4random_uniform(2)
+      let random = arc4random_uniform(5)
       var name = ""
       switch random {
       case 0:
-        name="Berlin"
+        name="lapaz"
       case 1:
-        name="Paris"
+        name="paris"
+      case 2:
+        name="osaka"
+      case 3:
+        name="lima"
+        
       default:
-        name="Paris"
-      }
+        name="ljubljana"
+        
+        }
         inputImage.image = UIImage(named: name)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,6 +74,3 @@ class AddCityController: UIViewController {
       weather = Weather(city: city!, temperature: Int(temp!)!, picture: nil)
     }
 }
-  
-
-
