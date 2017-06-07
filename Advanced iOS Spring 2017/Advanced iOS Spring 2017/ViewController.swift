@@ -10,24 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    ///@IBOutlet weak var cityLabel: UILabel!
-    ///@IBOutlet weak var tempLabel: UILabel! //! unpacking nullable optional tzn ?
-    
+  @IBOutlet weak var cityLabel: UILabel!
+  
+  @IBOutlet weak var tempLabel: UILabel!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        //let weather = WeatherFetch()
-        //weather.getWeather(city: "Berlin")
-        let weather = Weather(city: "Berlin",temp: 27,pict: nil)
-        ///cityLabel.text = weather!.city
-        ///tempLabel.text = String(describing: weather!.temp).description
+        /*
+        let weather = WeatherFetch()
+        weather.getWeather(city: "Berlin")
+      */
+      
+      let weather = Weather(city: "Berlin", temperature: 0, picture: nil)
+      cityLabel.text = weather!.city
+        tempLabel.text = "\(weather!.temperature)"
+      
     }
 
-    /*override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }*/
+    }
 
 }
 

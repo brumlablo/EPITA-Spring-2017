@@ -2,7 +2,7 @@
 //  WeatherTableViewCell.swift
 //  Advanced iOS Spring 2017
 //
-//  Created by Guest User on 24/05/17.
+//  Created by vanessa vargas on 5/24/17.
 //  Copyright © 2017 ___AdvancediOS___. All rights reserved.
 //
 
@@ -10,9 +10,11 @@ import UIKit
 
 class WeatherTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var cityLbl: UILabel!
-    @IBOutlet weak var tempLbl: UILabel!
-
+  @IBOutlet weak var cityLabel: UILabel!
+  
+  @IBOutlet weak var tempLabel: UILabel!
+  
+  @IBOutlet weak var imageContainer: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
