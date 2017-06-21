@@ -54,7 +54,7 @@ class TableView: UITableViewController {
     }
 
   
-    // Re usage of cells
+    // Reusage of cells
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherTableViewCell", for: indexPath) as?
       WeatherTableViewCell else {
@@ -68,6 +68,33 @@ class TableView: UITableViewController {
         return cell
     }
  
+    var weath:Weather!
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // Get index of selected cell
+        let index = tableView.indexPathForSelectedRow!
+        
+        weath = weatherArray[index.row]
+        performSegue(withIdentifier: "GoToDetailedView", sender: self)
+    }
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        if (segue.identifier == "GoToDetailedView") {
+            
+            // Get the new view controller using segue.destinationViewController.
+            // Pass the selected object to the new view controller.
+            
+            // initialize new view controller and cast it as your view controller
+            //var vc = segue.destination as! WeatherViewController
+            
+            // your new view controller should have property that will store passed value
+            //vc.weath = weath
+            
+            (segue.destination as! WeatherViewController).weath = weath
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -109,8 +136,7 @@ class TableView: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+
     }
     */
 

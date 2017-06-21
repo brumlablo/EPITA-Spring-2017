@@ -2,7 +2,7 @@
 //  AddCityController.swift
 //  Advanced iOS Spring 2017
 //
-//  Created by vanessa vargas on 6/1/17.
+//  Created by bb on 6/1/17.
 //  Copyright © 2017 ___AdvancediOS___. All rights reserved.
 //
 
@@ -18,6 +18,7 @@ class AddCityController: UIViewController {
   @IBOutlet weak var saveButton: UIBarButtonItem!
  
   var weather: Weather?
+  var name =  ""
   
   @IBAction func cancelButton(_ sender: Any) {
     //completition is what happens when the action completes.
@@ -31,7 +32,7 @@ class AddCityController: UIViewController {
         super.viewDidLoad()
 
       let random = arc4random_uniform(5)
-      var name = ""
+      
       switch random {
       case 0:
         name="lapaz"
@@ -56,9 +57,6 @@ class AddCityController: UIViewController {
     }
   
 
-  
-    // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
@@ -69,8 +67,10 @@ class AddCityController: UIViewController {
         return
       }
       let city = inputCity.text
+        
+      // check if int
       let temp = inputTextTemp.text
       
-      weather = Weather(city: city!, temperature: Int(temp!)!, picture: nil)
+      weather = Weather(city: city!, temperature: Int(temp!)!, picture: UIImage(named: name))
     }
 }
