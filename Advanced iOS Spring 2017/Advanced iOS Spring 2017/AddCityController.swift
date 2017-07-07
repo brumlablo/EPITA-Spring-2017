@@ -12,7 +12,6 @@ import os.log
 class AddCityController: UIViewController {
 
   @IBOutlet weak var inputCity: UITextField!
-  @IBOutlet weak var inputTemp: UIPickerView!
   @IBOutlet weak var inputImage: UIImageView!
   @IBOutlet weak var inputTextTemp: UITextField!
   @IBOutlet weak var saveButton: UIBarButtonItem!
@@ -59,6 +58,7 @@ class AddCityController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
       super.prepare(for: segue, sender: sender)
@@ -66,11 +66,18 @@ class AddCityController: UIViewController {
         os_log("Save button not pressed", log: OSLog.default, type: .debug )
         return
       }
-      let city = inputCity.text
         
-      // check if int
-      let temp = inputTextTemp.text
-      
-      weather = Weather(city: city!, temperature: Int(temp!)!, picture: UIImage(named: name))
+      //check if temp is int
+      let temp = Int(inputTextTemp.text!)
+      if temp == nil
+      {
+        print("Temperature should be an integer number.");
+        //possible todo: stop at AddCityController and print previous message in UI for the user
+        return
+      }
+      else
+      {
+        weather = Weather(city: inputCity.text!, temperature: Int(temp!), picture: UIImage(named: name))
+      }
     }
 }

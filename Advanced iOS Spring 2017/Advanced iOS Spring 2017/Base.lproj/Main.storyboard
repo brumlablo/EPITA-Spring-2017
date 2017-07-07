@@ -62,7 +62,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8im-H9-iwx" id="Yrs-f8-4pD">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6O5-kt-PDG">
@@ -139,15 +139,6 @@
                                 <color key="textColor" red="1" green="0.97114317500000003" blue="0.99077031090000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V73-Yl-wy5">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Details" id="iSd-Mv-lXP">
-                                        <barButtonItem key="backBarButtonItem" title="Back" id="2gx-Dw-TUF"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7F-Fn-WG6">
                                 <rect key="frame" x="0.0" y="549" width="222" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -158,6 +149,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.27058823529411763" green="0.51372549019607838" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="bkgImage" destination="54q-Ut-CaT" id="Wr1-vS-fMD"/>
@@ -214,7 +206,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.26904573840000001" green="0.51602123580000003" blue="0.57646705320000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.27058823529411763" green="0.51372549019607838" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add a City" id="ee2-g6-t8Y">
@@ -280,5 +272,5 @@
             <point key="canvasLocation" x="2429.5999999999999" y="-339.58020989505252"/>
         </scene>
     </scenes>
-    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+    <color key="tintColor" red="0.27058823529411763" green="0.51372549019607838" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
 </document>
